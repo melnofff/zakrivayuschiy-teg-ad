@@ -31,11 +31,14 @@
 }
 
 @keyframes sparks-appear {
-  0%, 100% {
+  0% {
     opacity: 0;
   }
   50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -120,7 +123,6 @@
   animation: sparks-appear 0.3s ease-in 0.3s both;
 }
 
-/* Состояние по умолчанию для искр (без лайка) */
 .like-icon:not(.is-liked) .sparks {
   opacity: 0;
   animation: none;
