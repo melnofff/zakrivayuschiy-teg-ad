@@ -64,7 +64,7 @@
 /* Исходное состояние - только контур */
 .like-icon .core {
   fill: none;
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear 0.3s;
 }
 
 .like-icon .main-body {
@@ -86,7 +86,7 @@
 
 .like-icon:hover .main-body {
   fill: var(--heart-contour-color);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear 0.3s;
 }
 
 /* ===== Состояние :active для сердца ===== */
@@ -98,7 +98,7 @@
 
 .like-icon:active .main-body {
   fill: var(--heart-fill-color);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear 0.3s;
 }
 
 /* ===== Состояние is-liked (клик) ===== */
@@ -110,20 +110,20 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-fill-color);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear 0.3s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-fill-color);
-  transition: fill 0.3s linear 0.06s;
+  transition: fill 0.3s linear 0.5s;
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s alternate;
+  animation: heart-scale 0.3s ease-in 0.5s alternate;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-appear 0.3s ease-in 0.3s both;
+  animation: sparks-appear 0.3s ease-in 0.5s both;
 }
 
 .like-icon:not(.is-liked) .sparks {
