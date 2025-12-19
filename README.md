@@ -1,13 +1,12 @@
+# Закрывающий тег
 
-## Закрывающий тег
+Финальный проект модулей вёрстки курса Яндекс Практикум.
 
-Финальный проект модулей вёрстки.
-
-### О проекте
+## О проекте
 
 Проект представляет собой рефлексию учебного пути в веб-разработке. Восемь карточек описывают разные этапы обучения — от первого знакомства с HTML и CSS до финального проекта с анимациями и сложной вёрсткой.
 
-### Технологии
+## Технологии
 
 * HTML5 (семантическая разметка)
 * CSS3 (Flexbox, CSS Variables, Animations, Transitions)
@@ -17,7 +16,7 @@
 * SVG-анимации
 * Вариативные шрифты (Inter Variable)
 
-### Особенности реализации
+## Особенности реализации
 
 * Анимированная иконка лайка с SVG (hover, active, is-liked состояния)
 * Модальное окно на элементе `<dialog>` с стилизацией `::backdrop`
@@ -27,10 +26,9 @@
 * Fluid typography с использованием `clamp()`
 * Семантическая разметка и доступность
 
-### Структура проекта
+## Структура проекта
 
 ```
-zakrivayuschiy-teg-ad-main/
 ├── fonts/              # Вариативный шрифт Inter и Press Start 2P
 ├── images/             # Изображения карточек, favicon
 ├── scripts/            # JavaScript для like-функциональности
@@ -43,11 +41,10 @@ zakrivayuschiy-teg-ad-main/
 └── index.html          # Главная страница
 ```
 
-### Ссылки
+## Ссылки
 
-* **Репозиторий:** https://github.com/melnofff/zakrivayuschiy-teg-ad/
-* **Демо:** https://melnofff.github.io//zakrivayuschiy-teg-ad/
----
+* **Демо:** https://melnofff.github.io/zakrivayuschiy-teg-ad/
+* **Репозиторий:** https://github.com/melnofff/zakrivayuschiy-teg-ad
 
 ## Автор
 

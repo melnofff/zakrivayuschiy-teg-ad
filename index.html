@@ -211,7 +211,7 @@
           </svg>
           <p class="dialog__text">Файл успешно загружен!</p>
         </div>
-        <button class="dialog__button button" type="submit">
+        <button class="dialog__button button" type="button">
           <span class="button__text">OK</span>
         </button>
       </form>
@@ -219,8 +219,14 @@
 
     <script src="./scripts/like.js"></script>
     <script>
-      document.querySelector('.save-button').addEventListener('click', () => {
+      document.querySelector('.save-button').addEventListener('click', (event) => {
+        event.preventDefault();
         document.querySelector('.dialog').showModal();
+      });
+      
+      document.querySelector('.dialog__button').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelector('.dialog').close();
       });
     </script>
   </body>
