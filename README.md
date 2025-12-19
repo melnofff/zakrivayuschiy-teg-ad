@@ -46,6 +46,7 @@ zakrivayuschiy-teg-ad-main/
 ### Ссылки
 
 * **Репозиторий:** https://github.com/melnofff/zakrivayuschiy-teg-ad/
+* **Демо:** https://melnofff.github.io//zakrivayuschiy-teg-ad/
 ---
 
 ## Автор
