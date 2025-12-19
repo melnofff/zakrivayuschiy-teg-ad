@@ -20,6 +20,9 @@
   --heart-contour-color: #000;
   --heart-fill-color: #ff0000;
   --heart-sparks-color: #ff0000;
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --themes-main-color: var(--accent-color);
   
   /* Цвет обводки лейбла */
   --label-stroke-color: #fff;
@@ -61,6 +64,8 @@
   --card-bg-color: #000;
   --btn-border-color: #fff;
   --heart-contour-color: #fff;
+  --contour-color: #fff;
+  --themes-main-color: var(--accent-color);
   --label-stroke-color: #000;
   
   --bg-image: 

@@ -48,18 +48,15 @@
   font-family: var(--accent-font), fantasy;
 }
 
-.header__logo {
+.header__title {
   font-size: clamp(49px, 4vw, 65px);
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--text-color);
   margin-block-end: 20px;
 }
 
-.header__title {
+.header__subtitle {
   font-size: clamp(14px, 2vw, 23px);
   text-transform: uppercase;
-  margin-block-end: 25px;
 }
 
 .theme-menu__list {
@@ -256,7 +253,6 @@
   cursor: pointer;
   block-size: 38px;
   transition: border-color 0.3s ease;
-  overflow: visible;
 }
 
 .card__icon-button:focus {
