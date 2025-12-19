@@ -230,6 +230,47 @@
       dialogButton.addEventListener('click', () => {
         dialog.close();
       });
+
+      // Переключение темы
+      const themeButtons = document.querySelectorAll('.theme-menu__button');
+      
+      function setTheme(themeName) {
+        const page = document.querySelector('.page');
+        
+        // Удаляем все классы тем
+        page.classList.remove('theme-dark');
+        
+        // Сбрасываем disabled для всех кнопок
+        themeButtons.forEach(btn => btn.disabled = false);
+        
+        if (themeName === 'dark') {
+          page.classList.add('theme-dark');
+        } else if (themeName === 'auto') {
+          // Авто - используем prefers-color-scheme
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            page.classList.add('theme-dark');
+          }
+        }
+        // Для light ничего не добавляем
+      }
+      
+      themeButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+          // Убираем disabled со всех кнопок
+          themeButtons.forEach(btn => btn.disabled = false);
+          // Устанавливаем disabled на нажатую кнопку
+          button.disabled = true;
+          
+          // Переключаем тему
+          if (index === 0) {
+            setTheme('light');
+          } else if (index === 1) {
+            setTheme('dark');
+          } else if (index === 2) {
+            setTheme('auto');
+          }
+        });
+      });
     </script>
   </body>
 </html>
