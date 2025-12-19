@@ -46,6 +46,9 @@
 
 .like-icon {
   cursor: pointer;
+  overflow: visible;
+  width: 39px;
+  height: 36px;
 }
 
 /* Скрываем искры по умолчанию */
@@ -55,7 +58,7 @@
 
 /* Группа сердца - центр трансформации */
 .like-icon .heart {
-  transform-origin: center;
+  transform-origin: center center;
 }
 
 /* Исходное состояние - только контур */

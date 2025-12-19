@@ -256,6 +256,7 @@
   cursor: pointer;
   block-size: 38px;
   transition: border-color 0.3s ease;
+  overflow: visible;
 }
 
 .card__icon-button:focus {
